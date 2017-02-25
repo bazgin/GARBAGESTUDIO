@@ -183,7 +183,7 @@
 	</div-->
 	<div class="full-width-container block-6">
 		<div class="google-map-api"> 
-			<div id="map-canvas" class="gmap"></div> 
+			<div id="googleMap" class="gmap"></div> 
 		</div> 
 	</div>
 </section>
@@ -240,7 +240,13 @@
 		});
 </script>
 <script>
-function MyMap()
+function MyMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 </script>
 <!--script type="text/javascript">
 		google_api_map_init();
