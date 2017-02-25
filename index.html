@@ -16,7 +16,7 @@
 	<script src="js/touchTouch.jquery.js"></script>
 	<script src="js/jquery.stellar.js"></script>
 	<script src="js/script.js"></script>
-	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+	<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyB-3gjl6vb1ipklhlXzeJSk9QNE9_LJWNs&callback=myMap;sensor=false'></script>
 	<!--[if (gt IE 9)|!(IE)]><!-->
 	<script src="js/jquery.mobile.customized.min.js"></script>
 	<script src="js/wow.js"></script>
@@ -72,10 +72,10 @@
 								</ul-->
 							</li>
 							<li><a href="index-1.html">Builds</a></li>
-							<li><a href="index-2.html">Guides</a></li>
-							<li><a href="index-3.html">Places</a></li>
+							<li><a href="index-2.html">Places</a></li>
+							<li><a href="index-3.html">Guides</a></li>
 							<li><a href="index-4.html">Forum</a></li>
-							<li><a href="index-4.html">Maps</a></li>
+							<li><a href="index-5.html">Maps</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -149,7 +149,7 @@
 					Bonne construction!
 
 					</p>
-					<!--a href="#" class="btn">more</a-->
+					<a align="center" href="index-1.html" class="btn">Connection</a>
 				</div>
 			</div>
 		</div>
@@ -239,7 +239,10 @@
 			}
 		});
 </script>
-<script type="text/javascript">
+<script>
+function MyMap()
+</script>
+<!--script type="text/javascript">
 		google_api_map_init();
 		function google_api_map_init(){
 			var map;
@@ -289,7 +292,7 @@
 			google.maps.event.addDomListener(window, "load", initialize); 
 
 		}
-</script>
+</script-->
 <script>
 	$(function(){
 		$('.isotope a').touchTouch();
