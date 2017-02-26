@@ -85,22 +85,53 @@
 <!--=======content================================-->
 
 <section id="content">
-	<div class="full-width-container block-1">
-		<div class="container">
-			<div class="row">
-				<div class="grid_12">
-					<header>
-						<h2><span>Our Locations</span></h2>
-					</header>
-					<div class="content_map">
-						<div class="google-map-api"> 
-							<div id="map-canvas" class="gmap"></div> 
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<form id="contact-form">
+						<div class="contact-form-loader"></div>
+							<header>
+								<h2><span>Contact Form</span></h2>
+							</header>
+							<fieldset>
+									<label class="name">
+										<span class="text">Your Name:</span>
+										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid name.</span>
+									</label>
+									<label class="email">
+										<span class="text">Your E-mail:</span>
+										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
+										<span class="empty-message">*This field is required.</span>
+										<span class="error-message">*This is not a valid email.</span>
+									</label>
+									<label class="phone">
+										<span class="text">Subject:</span>
+							              <input type="text" name="state" placeholder="" data-constraints="@JustLetters" />
+									</label>
+									<label class="message">
+										<span class="text">Message:</span>
+										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+										<span class="empty-message">*This field is required.</span>
+										<span class="error-message">*The message is too short.</span>
+									</label>
+								<div class="cont_btn">
+									<a href="#" data-type="reset" class="btn">clear</a>
+									<a href="#" data-type="submit" class="btn">send</a>
+								</div>
+						</fieldset> 
+						<div class="modal fade response-message">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Modal title</h4>
+									</div>
+									<div class="modal-body">
+										You message has been sent! We will be in touch soon.
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
 	<div class="full-width-container block-2">
 		<div class="container">
 			<div class="row">
@@ -194,7 +225,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer_bottom"><a href="http://www.templatemonster.com/" rel="nofollow"><img src="images/footer-logo.png" alt="logo"></a></div>
+		<!--div class="footer_bottom"><a href="http://www.templatemonster.com/" rel="nofollow"><img src="images/footer-logo.png" alt="logo"></a></div-->
 	</footer>
 <script type="text/javascript">
 		google_api_map_init();
