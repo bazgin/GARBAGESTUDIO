@@ -2,10 +2,14 @@
 ========================================================*/
 /* Contact Form Basic Styles 
 ========================================================*/
-#contact-form {
-  position: relative;
+#Login {
+  position: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
-#contact-form label {
+#Login label {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -15,16 +19,17 @@
   margin-bottom: 22px;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form label.email { }
-#contact-form label.message {
+#Login label.email { }
+#Login label.message {
   margin-bottom: 16px;
 }
-#contact-form fieldset {
+#Login fieldset {
   border: none;
+  margin: 30px 30px 30px
 }
 /* Contact Form Placeholder Styles 
 ========================================================*/
-#contact-form ._placeholder {
+#Login ._placeholder {
   width: calc(100% - 20px) !important;
   position: absolute;
   left: 0;
@@ -32,21 +37,22 @@
   display: block;
   line-height: 29px;
   font-size: 14px;
-  padding: 0 0 0 20px;
+  padding: 20 20 20 20px;
+  margin: 30px  30px  30px  30px
   cursor: text;
   color: #727070;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form ._placeholder.focused {} 
-#contact-form ._placeholder.hidden {
+#Login ._placeholder.focused {} 
+#Login ._placeholder.hidden {
   display: none;
 }
-#contact-form .file ._placeholder {
+#Login .file ._placeholder {
   display: none;
 }
 /* Contact Form Input 
 ========================================================*/
-#contact-form input[type='text'] {
+#Login input[type='text'] {
   width: calc(100% - 20px);
   background: #fff;
   line-height: 29px;
@@ -59,11 +65,11 @@
   border: 1px solid #c8c2c2;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form input[type='text']:focus {
+#Login input[type='text']:focus {
 }
 /* Contact Form File Input 
 ========================================================*/
-#contact-form .input-group {
+#Login .input-group {
   position: relative;
   display: table;
   border-collapse: separate;
@@ -71,12 +77,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#contact-form input.form-control[disabled] {
+#Login input.form-control[disabled] {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-#contact-form input.form-control {
+#Login input.form-control {
   position: relative;
   z-index: 2;
   float: left;
@@ -89,61 +95,61 @@
   -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-#contact-form .input-group-btn:first-child > .btn {
+#Login .input-group-btn:first-child > .btn {
   border-bottom-right-radius: 0;
+  align-self: center;
   border-top-right-radius: 0;
   margin: 0 -1px 0 0;
 }
-#contact-form .input-group .form-control:last-child {
+#Login .input-group .form-control:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-#contact-form .input-group-btn:last-child > .btn {
+#Login .input-group-btn:last-child > .btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-#contact-form .input-group .form-control:first-child {
+#Login .input-group .form-control:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-#contact-form input.form-control,
-#contact-form .input-group-btn {
+#Login input.form-control,
+#Login .input-group-btn {
   display: table-cell;
   border-collapse: separate;
   float: none !important;
 }
-#contact-form .input-group-btn label {
+#Login .input-group-btn label {
   width: auto;
   margin-left: -1px;
 }
-#contact-form .input-group-btn {
-  position: center;
+#Login .input-group-btn {
+  position: relative;
   font-size: 0;
   white-space: nowrap;
   width: 1%;
   vertical-align: middle;
 }
-#contact-form .btn {
+#Login .btn {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   font-weight: normal;
   white-space: nowrap;
-  margin-left: 120px;
-
+  margin: 5px 40px 0 0;
 }
-#contact-form .btn-default {
+#Login .btn-default {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
 }
-#contact-form .btn-default:hover {
+#Login .btn-default:hover {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-#contact-form .btn-default:active,
-#contact-form .btn-default:focus {
+#Login .btn-default:active,
+#Login .btn-default:focus {
   outline-offset: -2px;
   outline: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -151,7 +157,7 @@
 }
 /* Contact Form Textarea 
 ========================================================*/
-#contact-form textarea {
+#Login textarea {
   width: calc(100% - 30px);
   background: #ffffff;
   line-height: 24px;
@@ -165,11 +171,11 @@
   padding: 11px 10px 10px 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#contact-form textarea:focus {}
+#Login textarea:focus {}
 /* Contact Form Error messages
 ========================================================*/
-#contact-form .empty-message,
-#contact-form .error-message {
+#Login .empty-message,
+#Login .error-message {
   position: absolute;
   right: 3px;
   top: 2px;
@@ -182,13 +188,13 @@
   z-index: 99;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form .invalid .error-message,
-#contact-form .empty .empty-message {
+#Login .invalid .error-message,
+#Login .empty .empty-message {
   height: 20px;
 }
 /* Contact Form Processing Box
 ========================================================*/
-#contact-form .contact-form-loader {
+#Login .Login-loader {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -204,7 +210,7 @@
   background-position: 50% 50%;
   opacity: 0;
 }
-#contact-form.processing .contact-form-loader {
+#Login.processing .Login-loader {
   opacity: 1;
   z-index: 99;
   -webkit-transition: all 0.3s ease-in;
@@ -215,7 +221,7 @@
 .modal-open {
   overflow: hidden;
 }
-#contact-form .modal {
+#Login .modal {
   display: none;
   overflow: auto;
   overflow-y: scroll;
@@ -230,7 +236,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
-#contact-form .modal h4 {
+#Login .modal h4 {
   font-weight: bold !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -334,39 +340,39 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-#contact-form .btn {
+#Login .btn {
   margin-left: auto;
   
 }
 /* Contact for on index page-break-after
 =========================================================*/
 
-.index #contact-form label {
+.index #Login label {
   margin-bottom: 9px;
 }
-.index #contact-form input[type='text'], .index #contact-form textarea {
+.index #Login input[type='text'], .index #Login textarea {
   background: #fff;
   border: none;
   width: calc(100% - 10px);
   padding-top: 6px;
   padding-bottom: 7px;
 }
-.index #contact-form textarea { width: calc(100% - 20px); }
-.index #contact-form textarea { height: 70px;}
-.index #contact-form a {
+.index #Login textarea { width: calc(100% - 20px); }
+.index #Login textarea { height: 70px;}
+.index #Login a {
   font-size: 14px;
   font-style: italic;
   color: #f00;
   font-weight: 400;
  }
- .index #contact-form a:hover {color: #000;}
-.index #contact-form ._placeholder {
+ .index #Login a:hover {color: #000;}
+.index #Login ._placeholder {
   font-size: 11px;
   color: #666;
   font-family: 'Open Sans', sans-serif;
 }
-.index #contact-form label.name { margin-top: 7px; }
-#contact-form .text {
+.index #Login label.name { margin-top: 7px; }
+#Login .text {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 3px;

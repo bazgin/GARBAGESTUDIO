@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/contact-form.css">
-
+	<link rel="stylesheet" href="css/Login.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-migrate-1.2.1.js"></script>
 	<script src="js/script.js"></script>
@@ -41,7 +41,7 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css/ie-8.css">
 	<![endif]-->
 	</head>
-<body class="index-4">
+<body class="index-6">
 <!--==============================header=================================-->
 <header id="header">
 	<div id="stuck_container">
@@ -70,10 +70,11 @@
 								</ul-->
 							</li>
 							<li><a href="index-1.html">Builds</a></li>
-							<li><a href="index-2.html">Guides</a></li>
-							<li><a href="index-3.html">Places</a></li>
+							<li><a href="index-2.html">Places</a></li>
+							<li><a href="index-3.html">Guides</a></li>
 							<li><a href="index-4.html">Forum</a></li>
 							<li><a href="index-5.html">Maps</a></li>
+							<li class="current"><a href="index-6.html">Connexion</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -85,40 +86,30 @@
 <!--=======content================================-->
 
 <section id="content">
-	<form id="contact-form">
-						<div class="contact-form-loader"></div>
+	<form id="Login">
+						<div class="Login-loader"></div>
 							<header>
-								<h2><span>Contact Form</span></h2>
+								<h2><span align="center">Connexion</span></h2>
 							</header>
 							<fieldset>
 									<label class="name">
-										<span class="text">Your Name:</span>
+										<span class="text">Nom d'utilisateur</span>
 										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
+											<span class="empty-message">*Veuillez remplir ce champs</span>
+											<span class="error-message">*Nom d'utilisateur invalide</span>
 									</label>
-									<label class="email">
-										<span class="text">Your E-mail:</span>
-										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
-									</label>
-									<label class="phone">
-										<span class="text">Subject:</span>
-							              <input type="text" name="state" placeholder="" data-constraints="@JustLetters" />
-									</label>
-									<label class="message">
-										<span class="text">Message:</span>
-										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*The message is too short.</span>
+									<label class="Passe">
+										<span class="text">Mot de passe</span>
+							              <input type="text" name="mdp" placeholder="" value="" data-constraints="@Required @JustLetters" />
+											<span class="empty-message">*Veuillez remplir ce champs</span>
+											<span class="error-message">*Mot de passe invalide</span>
 									</label>
 								<div class="cont_btn">
-									<a href="#" data-type="reset" class="btn">clear</a>
-									<a href="#" data-type="submit" class="btn">send</a>
+									<!--a href="#" data-type="reset" class="btn">annuler</a-->
+									<a align="center" href="#" data-type="submit" class="btn">envoyer</a>
 								</div>
 						</fieldset> 
-						<div class="modal fade response-message">
+						<!--div class="modal fade response-message">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
@@ -130,7 +121,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div-->
 					</form>
 	<div class="full-width-container block-2">
 		<div class="container">
@@ -139,34 +130,34 @@
 					<form id="contact-form">
 						<div class="contact-form-loader"></div>
 							<header>
-								<h2><span>Contact Form</span></h2>
+								<h2><span>Nous contacter</span></h2>
 							</header>
 							<fieldset>
 									<label class="name">
-										<span class="text">Your Name:</span>
+										<span class="text">Votre nom:</span>
 										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
+											<span class="empty-message">*Veuillez remplir ce champs</span>
+											<span class="error-message">*Nom d'utilisateur invalide</span>
 									</label>
 									<label class="email">
-										<span class="text">Your E-mail:</span>
+										<span class="text">Votre E-mail:</span>
 										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
+										<span class="empty-message">*Veuillez remplir ce champs</span>
+										<span class="error-message">*E-mail invalide</span>
 									</label>
 									<label class="phone">
-										<span class="text">Subject:</span>
+										<span class="text">Objet:</span>
 							              <input type="text" name="state" placeholder="" data-constraints="@JustLetters" />
 									</label>
 									<label class="message">
 										<span class="text">Message:</span>
 										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*The message is too short.</span>
+										<span class="empty-message">*Veuillez remplir ce champs</span>
+										<span class="error-message">*VOtre message est trop court.</span>
 									</label>
 								<div class="cont_btn">
-									<a href="#" data-type="reset" class="btn">clear</a>
-									<a href="#" data-type="submit" class="btn">send</a>
+									<!--a href="#" data-type="reset" class="btn">clear</a-->
+									<a href="#" data-type="submit" class="btn">envoyer</a>
 								</div>
 						</fieldset> 
 						<div class="modal fade response-message">
@@ -177,7 +168,7 @@
 										<h4 class="modal-title">Modal title</h4>
 									</div>
 									<div class="modal-body">
-										You message has been sent! We will be in touch soon.
+										Message envoyé, Attendez de nos nouvelles!
 									</div>
 								</div>
 							</div>
@@ -187,24 +178,24 @@
 				<div class="grid_6 preffix_1">
 					<div>
 						<header>
-							<h2><span>Contact Information</span></h2>
+							<h2><span>Pouruoi nous parler?</span></h2>
 						</header>
 						<p class="el-1">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel
+							Vous avez des questions, des conseils, des recommendations, cette section est conçue spécialement pour que vous puissiez nous contacter. Alors n'hesitez pas, nous vous repondront au plus vite!
 							<br><br>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym.
+							Le dialogue est un élément fondateur de la démarche participative, sans lui rien n'est possible! Si vous voulez integrer de nouveaux guides, nous proposer des méthodes plus intelligentes, plus pratiques, nous sommes là pour ça! Vous êtes les experts avant nous!
 							<br><br>
-							Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique.honcuseri tym. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eromus at magna <br><br><br>
+							Si vous vouler participer à l'evolution du site et  lui permettre de voir de nouveaux horizons nous sommes à la recherche de developpeurs, d'administrateurs et de modérateurs pour le forum et le site. Envoyez nous votre candidature, vous aurez vite de nous nouvelles! <br><br><br>
 						</p>
 					</div>
 					<div class="grid_3 alpha">
 						<div class="address">
-							<p>The Company Name Inc. <br>9870 St Vincent Place, <br>Glasgow, DC 45 Fr 45.</p>
+							<p>GARBAGE STUDIO <br>Paris, France <br></p>
 						</div>
 					</div>
 					<div class="grid_3">
 						<div class="address">
-							<p>Telephone:+1 800 603 6035 <br>FAX:+1 800 889 9898 <br>E-mail: <a href="mailto:mail@demolink.org" class="mail">mail@demolink.org</a></p>
+							<p>Facebook: GARBAGE STUDIO<br>E-mail: <a href="mailto:mail@demolink.org" class="mail">GARBAGE@STUDIO.org</a></p>
 						</div>
 					</div>
 
