@@ -869,6 +869,11 @@ p {
   overflow: hidden;
   margin-bottom: 33px;
 }
+.index-1 .block-1 #buildsgallery .grid_4 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 33px;
+}
 .index-2 .block-1 h2 {
   margin-bottom: 64px;
 }
@@ -1176,6 +1181,15 @@ p {
   .index-4 .block-2 .cont_btn .btn {
     margin-right: 30px !important;
   }
+}
+.index-8 .succes {
+  background: url(../images/index_img_par.jpg);
+  background-attachment: fixed;
+  background-position: center 0%;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  overflow: hidden;
 }
 /*========================================================
 										FOOTER styles
