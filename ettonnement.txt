@@ -1,0 +1,5 @@
+COmment lier les pages à un utilisateur - inscription
+comment permettre a un utilisateur de remplir un page pré faite
+comment ajouter des pages sans retoucher au HTML- CSS
+comment developper une API maps ou des utilisateur peuvent ping des trucs
+comment importer une image par un user

@@ -84,120 +84,40 @@
 </header>
 
 <!--=======content================================-->
+<div class="full-width-container block-6">
+	<div class="google-map-api"> 
+		<div id="googleMap" style="width:1170;height:800px;"></div> 
+			<!--iframe id="map-canvas" class="gmap" style="width:100%;height:600px" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41997.726980368796!2d2.3570892662247407!3d48.860919337305546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1488094931331" 
+			 frameborder="0" style="border:0" allowfullscreen></iframe-->
+	</div> 
+</div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(48.85938, 2.343803),
+    zoom:12,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	styleArray = [
+				{"featureType":"water","stylers":[{"color":"#021019"}]},
+				{"featureType":"landscape","stylers":[{"color":"#08304b"}]},
+				{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},
+				{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},
+				{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},
+				{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},
+				{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},
+				{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},
+				{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},
+				{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},
+				{"featureType":"transit","stylers":[{"color":"#146474"}]},
+				{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},
+				{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]}
+				]
 
-<section id="content">
-	<div class="full-width-container block-1">
-		<div class="container">
-			<div class="row">
-				<div class="grid_12">
-					<header>
-						<h2><span>Our Locations</span></h2>
-					</header>
-					<div class="content_map">
-						<div class="google-map-api"> 
-							<div id="map-canvas" class="gmap"></div> 
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="full-width-container block-2">
-		<div class="container">
-			<div class="row">
-				<div class="grid_5">
-					<form id="contact-form">
-						<div class="contact-form-loader"></div>
-							<header>
-								<h2><span>Contact Form</span></h2>
-							</header>
-							<fieldset>
-									<label class="name">
-										<span class="text">Your Name:</span>
-										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
-									</label>
-									<label class="email">
-										<span class="text">Your E-mail:</span>
-										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
-									</label>
-									<label class="phone">
-										<span class="text">Subject:</span>
-							              <input type="text" name="state" placeholder="" data-constraints="@JustLetters" />
-									</label>
-									<label class="message">
-										<span class="text">Message:</span>
-										<textarea name="message" placeholder="" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*The message is too short.</span>
-									</label>
-								<div class="cont_btn">
-									<a href="#" data-type="reset" class="btn">clear</a>
-									<a href="#" data-type="submit" class="btn">send</a>
-								</div>
-						</fieldset> 
-						<div class="modal fade response-message">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title">Modal title</h4>
-									</div>
-									<div class="modal-body">
-										You message has been sent! We will be in touch soon.
-									</div>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="grid_6 preffix_1">
-					<div>
-						<header>
-							<h2><span>Contact Information</span></h2>
-						</header>
-						<p class="el-1">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel
-							<br><br>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym.
-							<br><br>
-							Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique.honcuseri tym. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eromus at magna <br><br><br>
-						</p>
-					</div>
-					<div class="grid_3 alpha">
-						<div class="address">
-							<p>The Company Name Inc. <br>9870 St Vincent Place, <br>Glasgow, DC 45 Fr 45.</p>
-						</div>
-					</div>
-					<div class="grid_3">
-						<div class="address">
-							<p>Telephone:+1 800 603 6035 <br>FAX:+1 800 889 9898 <br>E-mail: <a href="mailto:mail@demolink.org" class="mail">mail@demolink.org</a></p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--=======footer=================================-->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="grid_12">
-					<div class="copyright">
-						<pre>© <span id="copyright-year"></span> |  Privacy Policy</pre>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--div class="footer_bottom"><a href="http://www.templatemonster.com/" rel="nofollow"><img src="images/footer-logo.png" alt="logo"></a></div-->
-	</footer>
-<script type="text/javascript">
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-3gjl6vb1ipklhlXzeJSk9QNE9_LJWNs&callback=myMap"></script>
+<!--script type="text/javascript">
 		google_api_map_init();
 		function google_api_map_init(){
 			var map;
@@ -247,7 +167,11 @@
 			google.maps.event.addDomListener(window, "load", initialize); 
 
 		}
+</script-->
+<script>
+	$(function(){
+		$('.isotope a').touchTouch();
+	});
 </script>
-<!-- coded by Fred -->
 </body>
 </html>
