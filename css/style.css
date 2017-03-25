@@ -64,6 +64,22 @@ h5 a:hover {
 #header .social {
   text-align: center;
 }
+#header .btn1 {
+  width: 265px;
+  border: 1px solid #ffffff;
+  background: none;
+  display: block;
+  font: 26px/56px 'Open Sans', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-left: 600px;
+
+}
+#header .btn1:hover {
+  background: #3c3c3e;
+  color: #5d5959;
+}
 #header .social .fa {
   width: 69px;
   height: 69px;
@@ -543,7 +559,7 @@ p {
   margin-bottom: 40px;
 }
 .index .block-3 .btn {
-  margin: 50px 0 20px 0;
+  margin-right: 500px;
 }
 .index .block-3 .img_block {
   float: left;
@@ -849,6 +865,11 @@ p {
   text-align: center;
 }
 .index-2 .block-1 #touch_gallery .grid_4 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 33px;
+}
+.index-1 .block-1 #buildsgallery .grid_4 {
   position: relative;
   overflow: hidden;
   margin-bottom: 33px;
@@ -1160,6 +1181,15 @@ p {
   .index-4 .block-2 .cont_btn .btn {
     margin-right: 30px !important;
   }
+}
+.index-8 .succes {
+  background: url(../images/index_img_par.jpg);
+  background-attachment: fixed;
+  background-position: center 0%;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  overflow: hidden;
 }
 /*========================================================
 										FOOTER styles

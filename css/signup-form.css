@@ -1,11 +1,15 @@
-/* Contact Form variables
+/* signup Form variables
 ========================================================*/
-/* Contact Form Basic Styles 
+/* signup Form Basic Styles 
 ========================================================*/
-#contact-form {
-  position: relative;
+#signup {
+  position: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
-#contact-form label {
+#signup label {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -15,16 +19,16 @@
   margin-bottom: 22px;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form label.email { }
-#contact-form label.message {
+#signup label.email { }
+#signup label.message {
   margin-bottom: 16px;
 }
-#contact-form fieldset {
+#signup fieldset {
   border: none;
 }
-/* Contact Form Placeholder Styles 
+/* signup Form Placeholder Styles 
 ========================================================*/
-#contact-form ._placeholder {
+#signup ._placeholder {
   width: calc(100% - 20px) !important;
   position: absolute;
   left: 0;
@@ -37,16 +41,16 @@
   color: #727070;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form ._placeholder.focused {} 
-#contact-form ._placeholder.hidden {
+#signup ._placeholder.focused {} 
+#signup ._placeholder.hidden {
   display: none;
 }
-#contact-form .file ._placeholder {
+#signup .file ._placeholder {
   display: none;
 }
-/* Contact Form Input 
+/* signup Form Input 
 ========================================================*/
-#contact-form input[type='text'] {
+#signup input[type='text'] {
   width: calc(100% - 20px);
   background: #fff;
   line-height: 29px;
@@ -59,11 +63,11 @@
   border: 1px solid #c8c2c2;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form input[type='text']:focus {
+#signup input[type='text']:focus {
 }
-/* Contact Form File Input 
+/* signup Form File Input 
 ========================================================*/
-#contact-form .input-group {
+#signup .input-group {
   position: relative;
   display: table;
   border-collapse: separate;
@@ -71,12 +75,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#contact-form input.form-control[disabled] {
+#signup input.form-control[disabled] {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-#contact-form input.form-control {
+#signup input.form-control {
   position: relative;
   z-index: 2;
   float: left;
@@ -89,41 +93,41 @@
   -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-#contact-form .input-group-btn:first-child > .btn {
+#signup .input-group-btn:first-child > .btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   margin: 0 -1px 0 0;
 }
-#contact-form .input-group .form-control:last-child {
+#signup .input-group .form-control:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-#contact-form .input-group-btn:last-child > .btn {
+#signup .input-group-btn:last-child > .btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-#contact-form .input-group .form-control:first-child {
+#signup .input-group .form-control:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-#contact-form input.form-control,
-#contact-form .input-group-btn {
+#signup input.form-control,
+#signup .input-group-btn {
   display: table-cell;
   border-collapse: separate;
   float: none !important;
 }
-#contact-form .input-group-btn label {
+#signup .input-group-btn label {
   width: auto;
   margin-left: -1px;
 }
-#contact-form .input-group-btn {
+#signup .input-group-btn {
   position: center;
   font-size: 0;
   white-space: nowrap;
   width: 1%;
   vertical-align: middle;
 }
-#contact-form .btn {
+#signup .btn {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -132,27 +136,27 @@
   margin-left: 120px;
 
 }
-#contact-form .btn-default {
+#signup .btn-default {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
 }
-#contact-form .btn-default:hover {
+#signup .btn-default:hover {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-#contact-form .btn-default:active,
-#contact-form .btn-default:focus {
+#signup .btn-default:active,
+#signup .btn-default:focus {
   outline-offset: -2px;
   outline: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
-/* Contact Form Textarea 
+/* signup Form Textarea 
 ========================================================*/
-#contact-form textarea {
+#signup textarea {
   width: calc(100% - 30px);
   background: #ffffff;
   line-height: 24px;
@@ -166,11 +170,11 @@
   padding: 11px 10px 10px 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
-#contact-form textarea:focus {}
-/* Contact Form Error messages
+#signup textarea:focus {}
+/* signup Form Error messages
 ========================================================*/
-#contact-form .empty-message,
-#contact-form .error-message {
+#signup .empty-message,
+#signup .error-message {
   position: absolute;
   right: 3px;
   top: 2px;
@@ -183,13 +187,13 @@
   z-index: 99;
   font-family: 'Open Sans', sans-serif;
 }
-#contact-form .invalid .error-message,
-#contact-form .empty .empty-message {
+#signup .invalid .error-message,
+#signup .empty .empty-message {
   height: 20px;
 }
-/* Contact Form Processing Box
+/* signup Form Processing Box
 ========================================================*/
-#contact-form .contact-form-loader {
+#signup .signup-loader {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -205,18 +209,18 @@
   background-position: 50% 50%;
   opacity: 0;
 }
-#contact-form.processing .contact-form-loader {
+#signup.processing .signup-loader {
   opacity: 1;
   z-index: 99;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-/* Contact Form Modal 
+/* signup Form Modal 
 ========================================================*/
 .modal-open {
   overflow: hidden;
 }
-#contact-form .modal {
+#signup .modal {
   display: none;
   overflow: auto;
   overflow-y: scroll;
@@ -231,7 +235,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
-#contact-form .modal h4 {
+#signup .modal h4 {
   font-weight: bold !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -308,7 +312,7 @@
     margin: 10px;
   }
 }
-/* Contact Form Close icon 
+/* signup Form Close icon 
 ========================================================*/
 .close {
   float: right;
@@ -335,39 +339,39 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-#contact-form .btn {
+#signup .btn {
   margin-left: auto;
   
 }
-/* Contact for on index page-break-after
+/* signup for on index page-break-after
 =========================================================*/
 
-.index #contact-form label {
+.index #signup label {
   margin-bottom: 9px;
 }
-.index #contact-form input[type='text'], .index #contact-form textarea {
+.index #signup input[type='text'], .index #signup textarea {
   background: #fff;
   border: none;
   width: calc(100% - 10px);
   padding-top: 6px;
   padding-bottom: 7px;
 }
-.index #contact-form textarea { width: calc(100% - 20px); }
-.index #contact-form textarea { height: 70px;}
-.index #contact-form a {
+.index #signup textarea { width: calc(100% - 20px); }
+.index #signup textarea { height: 70px;}
+.index #signup a {
   font-size: 14px;
   font-style: italic;
   color: #f00;
   font-weight: 400;
  }
- .index #contact-form a:hover {color: #000;}
-.index #contact-form ._placeholder {
+ .index #signup a:hover {color: #000;}
+.index #signup ._placeholder {
   font-size: 11px;
   color: #666;
   font-family: 'Open Sans', sans-serif;
 }
-.index #contact-form label.name { margin-top: 7px; }
-#contact-form .text {
+.index #signup label.name { margin-top: 7px; }
+#signup .text {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 3px;
