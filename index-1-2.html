@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Builds - table de nuit</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
+	<link rel="stylesheet" href="css/Login.css">
+	<link rel="stylesheet" href="css/builds_carroussel.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/TMForm.js"></script>
+	<script src="js/modal.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie-8.css">
+	<![endif]-->
+	</head>
+<body class="index-6">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<div class="social">
+						<a href="#"><span class="bd-ra fa fa-facebook"></span></a>
+						<a href="#"><span class="bd-ra fa fa-tumblr"></span></a>
+						<a href="#"><span class="bd-ra fa fa-google-plus"></span></a>
+					</div>
+					<h1><a href="index.html">GARBAGE STUDIO<span>Building with trash</span></a></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li><a href="index.html">Home</a>
+								<!--ul>
+									<li><a href="#">Lorem ipsum</a></li>
+									<li><a href="#">Lorem ipsum</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Lorem ipsum</a></li>
+								</ul-->
+							</li>
+							<li class="current"><a href="index-1.html">Builds</a></li>
+							<li><a href="index-2.html">Places</a></li>
+							<li><a href="index-3.html">Guides</a></li>
+							<li><a href="index-4.html">Forum</a></li>
+							<li><a href="index-5.html">Maps</a></li>
+							<li><a href="index-6.html">Connexion</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=======content================================-->
+
+<section id="content">
+	<div class="full-width-container block-1"><!--Il va falloir voir si cette classe existe dans le CSS sinon lui en donner une et lui donner des propriétés pour que ce soit pas moche(margin et padding) voir flexbox sur W3School.com-->
+		<div class="container">
+			<div class="row">
+				<div class="grid_10"><!--important pour changer la taille des blocs textes dans le CSS-->
+					<div>
+						<h2><span> <br/>Table de nuit suspendue </span> </h2>
+						<p> 
+						Si vous avez un lit en mezzanine vous avez aussi le problème de ne pas avoir de table de nuit. Ce petit meuble bien pratique va vous être utile!
+						l'idée est simple: un plateau suspendu par deux câbles appuyé sur le bord du lit. C'est un principe simple qui permet d'économiser de la matière malgré l'utilisation d'acier.<br/>
+						<br/><br/>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="full-width-container block-2">
+		<div class="container">
+			<div class="row">
+				<div class="grid_5"><!--important pour changer la taille des blocs textes dans le CSS-->
+					<div>
+						<header>
+							<h2><span>Informations</span></h2><!--Titre de la section-->
+						</header>
+						<h4> Outils </h4>
+						<ul style="list-style-type:disc">
+							<li><p> Bonne scie à bois </p></li>
+							<li><p> Pince coupante </p></li>
+							<li><p> Perceuse et tournevis </p></li>
+							<li><p> vis, bagues pour cables au besoin </p></li>
+						</ul><br/><br/>
+						<h4> Objet recupérés </h4>
+						<ul style="list-style-type:disc">
+							<li><p> Une planche de bois epaisseur autour de 2cm </p></li>
+							<li><p> Des dominos d'électricien sinon des bagues pour câbles </p></li>
+							<li><p> Cables métalliques (dur à trouver) </p></li>
+							<li><p> Plat métallique (alu ou acier) </p></li>
+						</ul>
+						<br/><br/>
+					</div>
+					<h4> Photos <br/> </h4>
+					<div id="slider">
+						<figure>
+						<img src="images/builds/build1-1.jpg" alt>
+						<img src="images/builds/build1-2.jpg" alt>
+						<img src="images/builds/build1-3.jpg" alt>
+						<img src="images/builds/build1-4.jpg" alt>
+						<img src="images/builds/build1-1.jpg" alt>
+						</figure>
+					</div>
+				</div>
+				<div class="grid_6 preffix_1"><!--important pour changer la taille des blocs textes dans le CSS-->
+					<div>
+						<header>
+							<h2><span>Pas à Pas</span></h2><!--Titre de la section-->
+						</header>
+						<ul style="list-style-type:none">
+							<li><h4>Le plateau</h4><br/>
+								<p>
+								Définissez les dimensions de votre table de nuit, attention à ne pas voir trop grand cela pourrait 
+								ne pas tenir!<br/>
+								Découpez votre planche à la scie (en fonction de ce dont vous disposez)<br/>
+								Une fois aux bonnes dimensions, il vous faudra percer un ou deux trous sur l'un des cotés 
+								afin de passer les câbles pour maintenir le plateau<br/>
+								Au cas où le guide pour la découpe bois: <a href=""> Découpe bois </a><br/><br/>
+								</p>
+							</li>
+							<li><h4>Plats métalliques</h4><br/>
+								<p>
+								En fonction des dimensions du lit où vous voulez attacher la table de nuit définissez la longueur 
+								de votre plat, n'hésitez pas à laisser beaucoup de marge sur le retour.<br/>
+								Il vous faudra ensuite percer le plat (attention à utiliser les bonnes mèches) pour pouvoir visser 
+								les plats à la planche à chaque extrémités.<br/>
+								Il vous faudra donc faire trois trous par plats, un pour la planche, deux pour le câble<br/>
+								Pour plier les plats utilisez soit un marteau soit la force de vos bras jusqu'a ce que leur forme<br/>
+								soit adaptée au support<br/><br/>
+								</p>
+							</li>
+							<li><h4>Découpe des câbles</h4><br/>
+								<p>
+								Pour avoir des câbles à la bonne dimension mieux vaux voir large. Mesurer l'écart entre les deux 
+								attaches et pensez à ajouter une longueur pour le retour du câble. <br/>
+								Vous pourrez toujours le redécouper en finition une fois que tout sera assemblé. <br/>
+								<br/><br/>
+								</p>
+							</li>
+							<li><h4>Première attache</h4><br/>
+								<p>
+								afin de fixer les câbles et de garantir un plateau le plus plat possible le réglage des câbles va 
+								être crucial! Il vous faudra donc le fixer dans un premier temps en faisant une boucle à l'aide de 
+								dominos d'électriciens ou de bagues en aluminium. Je vous conseille de les attacher au plateau en 
+								le plat étant plus souple.<br/>
+								<br/><br/>
+								</p>
+							</li>
+							<li><h4>Seconde attache</h4><br/>
+								<p>
+								Passez les câbles dans la seconde attache. C'est à cette étape qu'il va falloir ajuster le niveau du 
+								plateau à l'aide des câbles. Pensez que les câbles une fois tendus ont tendance à l'allonger un peu.<br/>
+								Prévoyez donc un angle un peu plus petit que celui que vous désirez. <br/>
+								Il vous faut tendre les câbles de manière à ce que les plats se déforme à peine.<br/>
+								Maintenez les tendus et à l'aide des dominos ou des bagues attachez les et coupez l'excès de câble.<br/>
+								<br/><br/>
+								</p>
+							</li>
+							<li><h4>Pose</h4><br/>
+								<p>Il ne vous reste plus qu'a attacher votre table à votre lit et le build est fini!<br/>
+								<br/><br/>
+								</p>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--=======footer=================================-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<div class="copyright">
+						<pre>© <span id="copyright-year"></span> |  Privacy Policy</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
