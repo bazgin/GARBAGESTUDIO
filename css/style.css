@@ -37,7 +37,7 @@ h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover {
-  color: #d94d3a;
+  color: #000000;
 }
 * {
   -webkit-text-size-adjust: none;
@@ -792,7 +792,7 @@ p {
   margin-bottom: 95px;
 }
 .index-1 .block-1 h4 {
-  background: #323045;
+  background: #d94d3a;
   color: #ffffff;
   line-height: 52px;
   margin-top: 0;
