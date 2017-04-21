@@ -5,3 +5,13 @@ Projet d'informatique:<br/>
 -application permettant une localisation participative de gisement de matériaux<br/>
 LIEN DROPBOX:https://www.dropbox.com/sh/pgxbthuaikw7fpv/AAB20ODqcnb_j_fQWJqDScXCa?dl=0<br/>
 CLE API MAP:AIzaSyB-3gjl6vb1ipklhlXzeJSk9QNE9_LJWNs <br/>
+
+
+
+Présentation informatique : 
+
+- Introdution --> Victorine
+- Structure du site --> Julien
+- Explication du codage du site --> Basile
+- Organisation --> Alex
+- Conclusion --> Martin 
